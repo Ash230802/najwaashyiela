@@ -1,0 +1,62 @@
+form {
+    margin: 0 1rem;
+}
+/*make the input down below the label */
+.email-login label, .password-login label,
+.user-name label, .user-number label, 
+.user-email label, .user-password label {
+    display: block;
+}
+input {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 2.7rem;
+    background-color: #FFF6DC;
+    border: 1px solid black;
+    padding: 0.5rem; /*create space between the border of the input and the text type by the user */
+}
+.login-btn, .signup-btn {
+    padding: 0.5rem 0; 
+    width: 100%;  /*width of the button */
+    font-weight: bold;
+    background-color: #F8F0E5;
+    border: 2px solid #000;
+    margin: 1rem 0;
+}
+.login-action button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; /*create a space between the postcode and birthdate */
+}
+.user-birthdate label,.user-postcode label {
+    flex: 1; /* Distribute available width equally between date of birth and postcode */
+}
+
+.signup-action button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    color: #fff;
+}
+@media (max-width: 576px), (max-width: 1000px) and (orientation: landscape) {
+
+    .user-postcode label {
+        white-space: nowrap;
+    }
+}
+@media (max-width: 320px) {
+
+    /*makes the element and its contents display as block-level elements */
+    .user-details {
+        display:block;
+    }
+}
